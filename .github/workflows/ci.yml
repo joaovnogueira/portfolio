@@ -4,7 +4,7 @@ on:
   pull_request:
     branches: [main]
   push:
-    branches: [main, develop]
+    branches: [main]
 
 jobs:
   validate:
@@ -16,8 +16,8 @@ jobs:
       - name: Verificar arquivos principais
         run: |
           test -f index.html
-          test -f style.css
-          test -f script.js
+          test -f index.css
+          test -f index.js
 
       - name: CI concluído
         run: echo "Projeto validado com sucesso!"

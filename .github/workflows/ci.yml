@@ -19,5 +19,16 @@ jobs:
           test -f index.css
           test -f index.js
 
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Instalar dependências
+        run: npm install
+
+      - name: Executar testes
+        run: npm test
+
       - name: CI concluído
         run: echo "Projeto validado com sucesso!"

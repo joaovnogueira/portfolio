@@ -31,4 +31,4 @@ jobs:
         run: npm test
 
       - name: CI concluído
-        run: echo "Projeto validado com sucesso!"
+        run: echo "Projeto validado com sucesso!!"
